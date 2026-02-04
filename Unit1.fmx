@@ -1,0 +1,134 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 576
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object lbMenu: TListBox
+    Align = Left
+    Size.Width = 209.000000000000000000
+    Size.Height = 576.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 204.000000000000000000
+    Viewport.Height = 528.000000000000000000
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      TabOrder = 0
+      Text = 'Localiza'#231#227'o Atual'
+    end
+    object ListBoxItemLatitude: TListBoxItem
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 1
+      Text = 'Latitude'
+    end
+    object ListBoxItemLongitude: TListBoxItem
+      Position.Y = 88.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 2
+      Text = 'Longitude'
+    end
+    object ListBoxGroupHeader2: TListBoxGroupHeader
+      Position.Y = 132.000000000000000000
+      Size.Width = 204.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Endere'#231'o Atual'
+    end
+    object ListBoxItemAdminArea: TListBoxItem
+      Position.Y = 162.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 4
+      Text = 'Admin '#193'rea'
+    end
+    object ListBoxItemPaisCod: TListBoxItem
+      Position.Y = 206.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 5
+      Text = 'C'#243'digo Pa'#237's'
+    end
+    object ListBoxItemPais: TListBoxItem
+      Position.Y = 250.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 6
+      Text = 'Pa'#237's'
+    end
+    object ListBoxItemCaracteristica: TListBoxItem
+      Position.Y = 294.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 7
+      Text = 'Caracteristica'
+    end
+    object ListBoxItemLocalidade: TListBoxItem
+      Position.Y = 338.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 8
+      Text = 'Localidade'
+    end
+    object ListBoxItemSubAdminArea: TListBoxItem
+      Position.Y = 382.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 9
+      Text = 'S. A. '#193'rea'
+    end
+    object ListBoxItemSubLocalidade: TListBoxItem
+      Position.Y = 426.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 10
+      Text = 'S. Localidade'
+    end
+    object ListBoxItemSubLogradouro: TListBoxItem
+      Position.Y = 470.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 11
+      Text = 'S. Logradouro'
+    end
+    object ListBoxItemLogradouro: TListBoxItem
+      Position.Y = 514.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 12
+      Text = 'Logradouro'
+    end
+    object ListBoxHeader1: TListBoxHeader
+      Size.Width = 209.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 95.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Eletr'#244' '#8211' GPS'
+        TabOrder = 0
+      end
+      object swGPS: TSwitch
+        IsChecked = False
+        Position.X = 112.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 1
+        OnSwitch = swGPSSwitch
+      end
+    end
+  end
+  object wbMapa: TWebBrowser
+    Align = Client
+    Size.Width = 431.000000000000000000
+    Size.Height = 576.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lsGPS: TLocationSensor
+    Left = 457
+    Top = 400
+  end
+end
